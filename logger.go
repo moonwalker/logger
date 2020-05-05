@@ -1,7 +1,7 @@
 package logger
 
 type Logger interface {
-	DebugLevel(debug bool)
+	SetLevel(level int)
 	SetContext(context map[string]interface{})
 
 	Println(args ...interface{})
