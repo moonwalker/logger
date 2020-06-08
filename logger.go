@@ -3,7 +3,9 @@ package logger
 type Logger interface {
 	UseTextFormatter()
 	SetLevel(level int)
+	
 	SetContext(context map[string]interface{})
+	GetContext() map[string]interface{} 
 
 	Println(args ...interface{})
 	Printf(format string, args ...interface{})
